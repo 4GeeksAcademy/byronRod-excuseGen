@@ -2,11 +2,13 @@
 import "bootstrap";
 import "./style.css";
 
+document.getElementById("btn").addEventListener("click", generateExcuse);
+
 function generateExcuse() {
-  var who = ["The dog", "My grandma", "His turtle", "My bird"];
-  var action = ["ate", "peed", "crushed", "broke"];
-  var what = ["my homework", "the keys", "the car"];
-  var when = [
+  let who = ["The dog", "My grandma", "His turtle", "My bird"];
+  let action = ["ate", "peed", "crushed", "broke"];
+  let what = ["my homework", "the keys", "the car"];
+  let when = [
     "before the class",
     "right on time",
     "when I finished",
@@ -14,10 +16,10 @@ function generateExcuse() {
     "while I was praying"
   ];
 
-  var randomWho = who[Math.floor(Math.random() * who.length)];
-  var randomAction = action[Math.floor(Math.random() * action.length)];
-  var randomWhat = what[Math.floor(Math.random() * what.length)];
-  var randomWhen = when[Math.floor(Math.random() * when.length)];
+  let randomWho = who[Math.floor(Math.random() * who.length)];
+  let randomAction = action[Math.floor(Math.random() * action.length)];
+  let randomWhat = what[Math.floor(Math.random() * what.length)];
+  let randomWhen = when[Math.floor(Math.random() * when.length)];
 
   var excuse =
     randomWho + " " + randomAction + " " + randomWhat + " " + randomWhen;
